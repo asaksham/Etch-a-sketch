@@ -49,8 +49,11 @@ function changeColorOnClick(e) {
     // if(e.type)
     if (e.type === 'mouseover' && !mouseDown) return;
 
-    // console.log(item);
+    // if (e.target.style.backgroundColor == transparent) {
+
     e.target.style.backgroundColor = randomrgb();
+    console.log(e.target.style.backgroundColor);
+    // }
 
 }
 
